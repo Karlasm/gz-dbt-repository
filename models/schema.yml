@@ -4,38 +4,39 @@ version: 2
 
 sources:
   - name: gz_raw_data
-  description: Greenweez raw data 
+    description: Greenweez raw data
     tables:
       - name: raw_gz_sales
-      description: Greenweez sales
-      columns:
-        - name: date_date
-        description: date of purchase
-        - name: orders_id
-        description: order identifier of the purchase
-        - name: pdt_id
-        description: product identifier on the purchase
-        - name: revenue
-        description: total income generated
-        - name: quantity
-        description: number of products on the purchase 
+        description: Greenweez sales
+        columns:
+          - name: date_date
+            description: Date of purchase
+          - name: orders_id
+            description: Order identifier of the purchase
+          - name: pdt_id
+            description: Product identifier on the purchase
+          - name: revenue
+            description: Total income generated
+          - name: quantity
+            description: Number of products on the purchase 
       - name: raw_gz_product
-      description: Greenweez products
-      columns:
-        - name: products_id
-        description: product identifier
-        - name: purchse_price
-        description: price of the product 
+        description: Greenweez products
+        columns:
+          - name: products_id
+            description: Product identifier
+          - name: purchse_price
+            description: Price of the product 
       - name: raw_gz_ship
-      description: Greenweez shipping information
-      columns: 
-        - name: orders_id
-        description: Order identifier
-        - name: shipping_fee
-        description: shipping fee charged
-        - name: shipping_fee_1
-        description: shipping fee charged
-        - name: logCost
-        description: logistics costs
-        - name: ship_cost
-        description: shipping cost
+        description: Greenweez shipping information
+        columns: 
+          - name: orders_id
+            description: Order identifier
+          - name: shipping_fee
+            description: Shipping fee charged
+          - name: shipping_fee_1
+            description: Shipping fee charged (potential duplicate, verify)
+          - name: logCost
+            description: Logistics costs
+          - name: ship_cost
+            description: Shipping cost
+

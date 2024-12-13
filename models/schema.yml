@@ -24,6 +24,9 @@ sources:
         columns:
           - name: products_id
             description: Product identifier
+            tests:
+              - unique  # Verify that 'products_id' is unique
+              - not_null  # Verify that 'products_id' exists (is not null)
           - name: purchse_price
             description: Price of the product 
       - name: raw_gz_ship
@@ -31,6 +34,9 @@ sources:
         columns: 
           - name: orders_id
             description: Order identifier
+            tests:
+              - unique  # Verify that 'orders_id' is unique
+              - not_null  # Verify that 'orders_id' exists (is not null)
           - name: shipping_fee
             description: Shipping fee charged
           - name: shipping_fee_1
@@ -39,4 +45,3 @@ sources:
             description: Logistics costs
           - name: ship_cost
             description: Shipping cost
-
